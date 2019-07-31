@@ -22,6 +22,11 @@ public class Graph {
       adjecency.put(tasks[i], new ArrayList<>());
   }
 
+
+  /*
+   * source should be executed before dest. dest is dependent on source task.
+   * 
+   */
   public void addEdge(String source, String dest) {
     adjecency.get(source).add(dest);
   }
